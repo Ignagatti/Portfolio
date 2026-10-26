@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ignacio Gatti | Desarrollador de Software</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Portfolio de Ignacio Gatti - Estudiante de 3° año de Tecnicatura en Desarrollo de Software en Esperanza, Santa Fe. Desarrollo de sistemas de escritorio con Electron, TypeScript, React, SQLite y desarrollo web.">
+  <meta name="keywords"
+    content="Ignacio Gatti, Desarrollador de Software, Portfolio, Electron, React, TypeScript, POS, SQLite, Esperanza, Santa Fe">
+  <meta name="author" content="Ignacio Gatti">
+  <link rel="canonical" href="https://ignagatti.github.io/Portfolio/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ignagatti.github.io/Portfolio/">
+  <meta property="og:title" content="Ignacio Gatti | Desarrollador de Software">
+  <meta property="og:description"
+    content="Proyectos de software de escritorio y web: Sistemas POS para comercios y farmacias, gestión de salones y comandas, y menús digitales.">
+  <meta property="og:image" content="assets/profile.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ignacio Gatti | Desarrollador de Software">
+  <meta name="twitter:description"
+    content="Portfolio de proyectos: Electron, React, TypeScript, SQLite y desarrollo web.">
+  <meta name="twitter:image" content="assets/profile.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Schema.org JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ignacio Gatti",
+    "jobTitle": "Desarrollador de Software",
+    "url": "https://ignagatti.github.io/Portfolio/",
+    "sameAs": [
+      "https://github.com/Ignagatti"
+    ],
+    "alumniOf": "Instituto Tecnológico El Molino",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Esperanza",
+      "addressRegion": "Santa Fe",
+      "addressCountry": "Argentina"
+    },
+    "knowsAbout": ["TypeScript", "JavaScript", "Electron", "React", "SQLite", "PostgreSQL", "HTML5", "CSS3", "Python"]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- ===================================================================
+       HEADER & NAVIGATION
+       =================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-logo" id="brandLogo">Ignacio Gatti</a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#hero" class="nav-link active" id="navLinkInicio">Inicio</a></li>
+          <li><a href="#sobre-mi" class="nav-link" id="navLinkSobreMi">Sobre mí</a></li>
+          <li><a href="#proyectos" class="nav-link" id="navLinkProyectos">Proyectos</a></li>
+          <li><a href="#habilidades" class="nav-link" id="navLinkHabilidades">Habilidades</a></li>
+          <li><a href="#trayectoria" class="nav-link" id="navLinkTrayectoria">Trayectoria</a></li>
+          <li><a href="#contacto" class="nav-link" id="navLinkContacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions (Theme Toggle & CV CTA) -->
+      <div class="nav-actions">
+        <button class="btn-theme-toggle" id="themeToggleBtn" aria-label="Cambiar tema claro u oscuro"
+          title="Cambiar tema">
+          <span id="themeIcon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+            </svg>
+          </span>
+        </button>
+
+        <a href="assets/CV_Ignacio_Gatti.pdf" download="CV_Ignacio_Gatti.pdf" class="btn btn-secondary btn-sm"
+          id="navDownloadCvBtn">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>CV</span>
+        </a>
+
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menú de navegación">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================================================================
+         HERO SECTION
+         =================================================================== -->
+    <section class="section hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Left Column: Copy & Actions -->
+          <div class="hero-content">
+            <div class="hero-badge-wrap">
+              <span class="badge">
+                <span class="status-dot"></span>
+                Disponible para oportunidades y proyectos de software
+              </span>
+            </div>
+
+            <h1 class="hero-title">
+              Hola, soy Ignacio Gatti
+            </h1>
+
+            <div class="hero-role-wrapper">
+              <span id="typingText">Estudiante de Desarrollo de Software</span>
+              <span class="typing-cursor"></span>
+            </div>
+
+            <p class="hero-desc">
+              Estudiante de <strong>3° año de la Tecnicatura en Desarrollo de Software</strong> en el Instituto
+              Tecnológico El Molino (Esperanza, Santa Fe). Desarrollo <strong>sistemas de escritorio y aplicaciones
+                web</strong> orientadas a resolver necesidades concretas de comercios, stock, puntos de venta y atención
+              al público.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#proyectos" class="btn btn-primary btn-lg" id="heroBtnProyectos">
+                Ver Proyectos
+              </a>
+
+              <a href="https://wa.me/5493496462576?text=Hola%20Ignacio,%20vi%20tu%20portfolio%20y%20me%20gustar%C3%ADa%20conversar."
+                target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg" id="heroBtnWhatsapp">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z" />
+                </svg>
+                WhatsApp
+              </a>
+
+              <a href="assets/CV_Ignacio_Gatti.pdf" download="CV_Ignacio_Gatti.pdf" class="btn btn-secondary btn-lg"
+                id="heroBtnCv">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Descargar CV
+              </a>
+            </div>
+
+            <!-- Stats Ticker -->
+            <div class="hero-stats">
+              <div class="stat-item">
+                <h3 class="stat-number" id="ghRepoCount" data-target="9" data-suffix="+">9+</h3>
+                <p>Repositorios en GitHub</p>
+              </div>
+              <div class="stat-item">
+                <h3 class="stat-number" data-target="4" data-suffix="">4</h3>
+                <p>Sistemas Principales</p>
+              </div>
+              <div class="stat-item">
+                <h3 class="stat-number" data-target="3" data-suffix="°">3°</h3>
+                <p>Año de Carrera</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Profile Card with Real Photo -->
+          <div class="hero-visual">
+            <div class="profile-card-container">
+              <div class="profile-card" id="profileCard">
+                <div class="profile-image-wrap">
+                  <img src="assets/profile.jpg" alt="Foto de perfil de Ignacio Gatti - Desarrollador de Software"
+                    class="profile-image" id="profileImage" />
+                  <div class="profile-status">
+                    <span style="display:flex; align-items:center; gap:6px;">
+                      <span class="status-dot"></span>
+                      Esperanza, Santa Fe
+                    </span>
+                    <span
+                      style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-secondary);">@Ignagatti</span>
+                  </div>
+                </div>
+
+                <div class="profile-meta">
+                  <h3>Ignacio Gatti</h3>
+                  <p>Desarrollo de Software</p>
+
+                  <div class="profile-tech-pills">
+                    <span class="pill">Electron</span>
+                    <span class="pill">TypeScript</span>
+                    <span class="pill">React</span>
+                    <span class="pill">SQLite</span>
+                    <span class="pill">SQL</span>
+                  </div>
+
+                  <div style="display:flex; justify-content:center; gap:8px;">
+                    <a href="https://github.com/Ignagatti" target="_blank" rel="noopener noreferrer"
+                      class="btn btn-secondary btn-sm" style="flex:1;">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                          d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                      </svg>
+                      GitHub
+                    </a>
+                    <a href="mailto:gattiignacio85@gmail.com" class="btn btn-secondary btn-sm" style="flex:1;">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                      </svg>
+                      Email
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         ABOUT SECTION
+         =================================================================== -->
+    <section class="section" id="sobre-mi">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Sobre mí</span>
+          <h2 class="section-title">De la necesidad real a soluciones de software</h2>
+          <p class="section-desc">
+            Desarrollo software enfocado en resolver problemas cotidianos con código claro, interfaces directas y
+            funcionalidad práctica.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              Soy <strong>Ignacio Gatti</strong>, estudiante de 3° año de la Tecnicatura en Desarrollo de Software en el
+              Instituto Tecnológico "El Molino" en Esperanza, Santa Fe. Me dedico al desarrollo de software de
+              escritorio y aplicaciones web.
+            </p>
+            <p>
+              Trabajo en atención al cliente y como mozo en el <strong>Club de Bochas Barrio Rivera en
+                Esperanza</strong>. Estar en el salón todos los días atendiendo mesas, tomando pedidos y lidiando con el
+              ritmo del servicio me hizo ver en primera persona los problemas reales de los negocios: comandas que se
+              demoran, falta de control en el stock o cuentas que se complican. De esa necesidad real surgieron
+              proyectos como el <strong>Sistema-Mozos</strong> o la <strong>Carta Digital</strong>, pensados para
+              solucionar cosas concretas de forma simple y rápida.
+            </p>
+            <p>
+              También desarrollé <strong>AcuApp</strong>, una plataforma web para la fábrica de muebles Acuaber que
+              permite cargar pedidos con personalización completa (telas, colores de lustre y medidas), generar
+              presupuestos automáticos y gestionar de forma centralizada clientes, proveedores y ventas.
+            </p>
+
+            <div style="margin-top:24px;">
+              <a href="assets/CV_Ignacio_Gatti.pdf" download="CV_Ignacio_Gatti.pdf" class="btn btn-primary"
+                id="aboutDownloadCv">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Descargar CV (PDF)
+              </a>
+            </div>
+          </div>
+
+          <div class="about-cards-grid">
+            <div class="about-feature-card">
+              <h4>Enfoque Práctico</h4>
+              <p>Interfaces pensadas para quien las usa todos los días: rápidas, directas y sin pasos innecesarios.</p>
+            </div>
+
+            <div class="about-feature-card">
+              <h4>Desktop & Web</h4>
+              <p>Desarrollo de sistemas de escritorio con Electron, TypeScript y SQLite, junto con interfaces web
+                reactivas con React y JavaScript.</p>
+            </div>
+
+            <div class="about-feature-card">
+              <h4>Experiencia de Campo</h4>
+              <p>Haber trabajado de cara al público me ayuda a entender cómo interactúa el usuario con la tecnología en
+                situaciones reales de trabajo.</p>
+            </div>
+
+            <div class="about-feature-card">
+              <h4>Trabajo Colaborativo</h4>
+              <p>Experiencia trabajando con Git, metodologías ágiles, proyectos en equipo y relevamiento técnico con
+                clientes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         PROJECTS SECTION
+         =================================================================== -->
+    <section class="section" id="proyectos" style="background-color: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Portafolio</span>
+          <h2 class="section-title">Proyectos</h2>
+          <p class="section-desc">
+            Sistemas de punto de venta, gestión comercial y aplicaciones web desarrolladas con tecnologías actuales.
+          </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="projects-filter" id="projectsFilter">
+          <button class="filter-btn active" data-filter="all" id="filterAll">Todos</button>
+          <button class="filter-btn" data-filter="desktop" id="filterDesktop">Desktop / POS</button>
+          <button class="filter-btn" data-filter="web" id="filterWeb">Web</button>
+          <button class="filter-btn" data-filter="featured" id="filterFeatured">Principales</button>
+        </div>
+
+        <!-- Grid of Project Cards (Rendered via JS) -->
+        <div class="projects-grid" id="projectsContainer">
+          <!-- Populated by js/main.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SKILLS SECTION
+         =================================================================== -->
+    <section class="section" id="habilidades">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Competencias</span>
+          <h2 class="section-title">Habilidades Técnicas</h2>
+          <p class="section-desc">
+            Lenguajes, bases de datos y herramientas que utilizo para construir aplicaciones confiables.
+          </p>
+        </div>
+
+        <div class="skills-container" id="skillsContainer">
+          <!-- Populated by js/main.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         TRAYECTORIA (EXPERIENCIA & EDUCACIÓN)
+         =================================================================== -->
+    <section class="section" id="trayectoria" style="background-color: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Trayectoria</span>
+          <h2 class="section-title">Educación y Experiencia</h2>
+          <p class="section-desc">
+            Mi formación técnica y la experiencia laboral que complementa mi perfil profesional.
+          </p>
+        </div>
+
+        <div class="timeline-grid">
+          <!-- Education Column -->
+          <div class="timeline-column">
+            <div class="timeline-column-header">
+              <h3>Estudios y Formación</h3>
+            </div>
+            <div class="timeline" id="educationTimeline">
+              <!-- Populated by js/main.js -->
+            </div>
+          </div>
+
+          <!-- Experience Column -->
+          <div class="timeline-column">
+            <div class="timeline-column-header">
+              <h3>Experiencia y Tesis</h3>
+            </div>
+            <div class="timeline" id="experienceTimeline">
+              <!-- Populated by js/main.js -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         CONTACT SECTION
+         =================================================================== -->
+    <section class="section" id="contacto">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Conversemos</span>
+          <h2 class="section-title">Contacto</h2>
+          <p class="section-desc">
+            Si te interesa mi perfil para una propuesta laboral, pasantía o proyecto, puedes contactarme por estos
+            medios:
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Direct Info Cards & Quick Actions -->
+          <div class="contact-info-panel">
+            <!-- Email Card -->
+            <div class="contact-card">
+              <div class="contact-card-left">
+                <div class="contact-card-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-card-text">
+                  <span>Correo Electrónico</span>
+                  <strong>gattiignacio85@gmail.com</strong>
+                </div>
+              </div>
+              <button class="btn-copy" id="copyEmailBtn" title="Copiar correo" aria-label="Copiar correo">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                Copiar
+              </button>
+            </div>
+
+            <!-- Phone Card -->
+            <div class="contact-card">
+              <div class="contact-card-left">
+                <div class="contact-card-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                    <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                  </svg>
+                </div>
+                <div class="contact-card-text">
+                  <span>Teléfono / WhatsApp</span>
+                  <strong>+54 9 3496-462576</strong>
+                </div>
+              </div>
+              <button class="btn-copy" id="copyPhoneBtn" title="Copiar teléfono" aria-label="Copiar teléfono">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                Copiar
+              </button>
+            </div>
+
+            <!-- WhatsApp Direct Card -->
+            <div class="contact-card">
+              <div class="contact-card-left">
+                <div class="contact-card-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z" />
+                  </svg>
+                </div>
+                <div class="contact-card-text">
+                  <span>Mensaje Directo</span>
+                  <strong>WhatsApp</strong>
+                </div>
+              </div>
+              <a href="https://wa.me/5493496462576?text=Hola%20Ignacio,%20vi%20tu%20portfolio%20y%20me%20gustar%C3%ADa%20conversar."
+                target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                Abrir chat
+              </a>
+            </div>
+
+            <!-- GitHub Card -->
+            <div class="contact-card">
+              <div class="contact-card-left">
+                <div class="contact-card-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                  </svg>
+                </div>
+                <div class="contact-card-text">
+                  <span>Repositorios de Código</span>
+                  <strong>github.com/Ignagatti</strong>
+                </div>
+              </div>
+              <a href="https://github.com/Ignagatti" target="_blank" rel="noopener noreferrer"
+                class="btn btn-secondary btn-sm">
+                Ver perfil
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Contact Form -->
+          <div class="contact-form-wrap">
+            <form class="contact-form" id="contactForm">
+              <div class="form-group">
+                <label for="formName" class="form-label">Nombre o Empresa</label>
+                <input type="text" id="formName" class="form-input" placeholder="Tu nombre" required />
+              </div>
+
+              <div class="form-group">
+                <label for="formEmail" class="form-label">Correo Electrónico</label>
+                <input type="email" id="formEmail" class="form-input" placeholder="correo@ejemplo.com" required />
+              </div>
+
+              <div class="form-group">
+                <label for="formMessage" class="form-label">Mensaje</label>
+                <textarea id="formMessage" class="form-textarea" placeholder="Escribe tu mensaje o propuesta..."
+                  required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg" id="submitFormBtn">
+                Enviar Mensaje
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================================================================
+       FOOTER
+       =================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h4>Ignacio Gatti</h4>
+          <p>Desarrollo de Software • Esperanza, Santa Fe, Argentina</p>
+        </div>
+
+        <div class="footer-socials">
+          <a href="https://github.com/Ignagatti" target="_blank" rel="noopener noreferrer" class="social-icon-btn"
+            title="GitHub" aria-label="GitHub de Ignacio Gatti">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+            </svg>
+          </a>
+
+          <a href="https://wa.me/5493496462576" target="_blank" rel="noopener noreferrer" class="social-icon-btn"
+            title="WhatsApp" aria-label="WhatsApp de Ignacio Gatti">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z" />
+            </svg>
+          </a>
+
+          <a href="mailto:gattiignacio85@gmail.com" class="social-icon-btn" title="Email"
+            aria-label="Email de Ignacio Gatti">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Ignacio Gatti. Todos los derechos reservados.</p>
+        <p>Esperanza, Santa Fe, Argentina</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================
+       PROJECT MODAL
+       =================================================================== -->
+  <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-content">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Cerrar modal">&times;</button>
+      <div class="modal-body" id="modalBody">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Volver arriba" title="Volver al inicio">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- JavaScript Modules -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
