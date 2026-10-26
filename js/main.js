@@ -159,6 +159,13 @@ function initNavbar() {
         mobileToggle.classList.remove('open');
       });
     });
+
+    document.addEventListener('click', (e) => {
+      if (navMenu.classList.contains('open') && !navMenu.contains(e.target) && !mobileToggle.contains(e.target)) {
+        navMenu.classList.remove('open');
+        mobileToggle.classList.remove('open');
+      }
+    });
   }
 }
 
